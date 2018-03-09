@@ -36,13 +36,21 @@ public class PilhaComListaLigada {
       }
     }
 
+    public int top() throws EPilhaVazia{
+      if (this.isEmpty()) {
+        throw new EPilhaVazia("A pilha está vazia");
+      }else {
+        return this.lista_ligada.head.getNumero();
+      }
+    }
+
     public void imprimirPilha(){
       if (this.isEmpty()) {
         System.out.println("A pilha está vazia");
       }else {
         No atual = this.lista_ligada.head;
         while (atual != null) {
-          System.out.println(atual.getNumero());
+          System.out.println("Número: " + atual.getNumero());
           atual = atual.getProximo();
         }
       }
