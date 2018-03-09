@@ -1,6 +1,6 @@
 public class No {
-  public int numero;
-  public No proximo;
+  private int numero;
+  private No proximo;
 
   public No (int numero){
     this.numero = numero;
@@ -9,5 +9,13 @@ public class No {
 
   public int getNumero(){
     return this.numero;
+  }
+
+  public No getProximo(){
+    return this.proximo;
+  }
+
+  public void setProximo(No no){
+    this.proximo = no;
   }
 }

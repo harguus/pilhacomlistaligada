@@ -1,4 +1,5 @@
 public class ListaLigada{
+
   public No head;
 
   public ListaLigada(){
